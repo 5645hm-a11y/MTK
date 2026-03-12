@@ -1,0 +1,170 @@
+# Hebrew Translation - תרגום עברית
+app:
+  name: "עורך קושחות MTK Pro"
+  version: "1.0.0"
+
+menu:
+  file: "קובץ"
+  file_open_workspace: "פתח סביבת עבודה"
+  file_exit: "יציאה"
+  device: "מכשיר"
+  device_detect: "זהה מכשיר"
+  device_extract_all: "חלץ את כל המחיצות"
+  tools: "כלים"
+  tools_generate_scatter: "צור קובץ Scatter"
+  tools_export_firmware: "ייצא קושחה מוערכת"
+  settings: "הגדרות"
+  settings_language: "שפה"
+  help: "עזרה"
+  help_about: "אודות"
+
+toolbar:
+  detect_device: "זהה מכשיר"
+  extract_partitions: "חלץ מחיצות"
+  import_partitions: "ייבא מחיצות קיימות"
+  generate_scatter: "צור Scatter"
+  export_firmware: "ייצא קושחה"
+
+device_panel:
+  title: "מידע על המכשיר"
+  status: "סטטוס"
+  mode: "מצב"
+  chip: "שבב"
+  model: "דגם"
+  not_connected: "לא מחובר"
+  connected: "מחובר"
+  connect_button: "זהה מכשיר"
+
+partition_panel:
+  title: "מחיצות"
+  name: "שם"
+  size_mb: "גודל (MB)"
+  type: "סוג"
+  status: "סטטוס"
+  ready: "מוכן"
+
+editor_panel:
+  title: "עורך"
+  boot_logo_section: "עורך לוגו אתחול"
+  logo_placeholder: "בחר תמונת לוגו..."
+  browse: "עיון"
+  apply_logo: "החל לוגו"
+  build_props_section: "עורך מאפייני Build"
+  props_placeholder: |
+    הזן מאפיינים בפורמט:
+    ro.product.model=הטלפון המותאם שלי
+    ro.build.display.id=גרסה מותאמת
+  apply_properties: "החל מאפיינים"
+  changes_log: "יומן שינויים"
+  clear_changes: "נקה שינויים"
+
+preview_panel:
+  title: "תצוגה מקדימה"
+  refresh: "רענן תצוגה"
+  auto_refresh_enable: "הפעל רענון אוטומטי"
+  auto_refresh_disable: "כבה רענון אוטומטי"
+  preview_info: "תצוגה: מסך אתחול"
+  not_available: "תצוגה מקדימה\nלא זמינה"
+  firmware_preview_title: "תצוגת הרכבת קושחה"
+  system_bootable: "סט מחיצות תקין לאתחול זוהה"
+  system_partial: "סט מחיצות חלקי - ייתכן כשל אתחול"
+  required_summary: "מחיצות נדרשות: {present}/{total} (חסרות: {missing})"
+  derived_from_partitions: "נגזר מהמחיצות שחולצו"
+  preview_composed_info: "תצוגה: מערכת צפויה מהמחיצות שחולצו"
+  preview_logo_info: "תצוגה: לוגו אתחול שנבחר"
+  app_phone: "טלפון"
+
+messages:
+  device_detected: "מכשיר זוהה: {mode}"
+  no_device: "לא נמצא מכשיר תואם. אנא חבר מכשיר MTK."
+  error: "שגיאה"
+  success: "הצלחה"
+  warning: "אזהרה"
+  extraction_complete: "חולצו {count} מחיצות"
+  scatter_created: "קובץ Scatter נוצר בהצלחה:\n{path}"
+  firmware_exported: "קושחה יוצאה בהצלחה אל:\n{path}"
+  no_partitions: "אין מחיצות זמינות"
+  no_modifications: "אין שינויים לייצוא"
+  select_logo: "בחר תמונת לוגו אתחול"
+  logo_applied: "לוגו האתחול הוחל בהצלחה"
+  select_partition_folder: "בחר תיקייה עם קבצי מחיצות"
+  partitions_imported: "יובאו {count} קבצי מחיצות מהתיקייה"
+  no_partition_files: "לא נמצאו קבצי מחיצות (.img) בתיקייה שנבחרה"
+  language_changed: "שפה שונתה"
+  restart_required: "השפה שונתה ל-{language}.\n\nאנא הפעל מחדש את התוכנה כדי להחיל את השינויים."
+  device_found: "מכשיר נמצא!\n\nמצב: {mode}\nמכשיר: {name}"
+  brick_detected_title: "מכשיר במצב שגיאה ⚠"
+  brick_detected_message: |
+    זוהה מכשיר MTK אך נראה שהוא במצב שגיאה או Brick.
+
+    זה עשוי להעיד על:
+    • המכשיר כבוי
+    • המכשיר במצב Brick
+    • חסרים דרייברים או שהדרייברים שגויים
+
+    פתרונות:
+    1. התקן דרייברי MTK USB VCOM
+    2. התקן דרייבר libusb/WinUSB באמצעות Zadig (https://zadig.akeo.ie)
+    3. נסה לחבר את המכשיר במצב אחר
+       - החזק Power + Volume Down בזמן החיבור
+       - או החזק Volume Up + Volume Down
+  no_device_title: "לא נמצא מכשיר"
+  no_device_message: |
+    לא נמצא מכשיר MTK תואם.
+
+    אנא וודא:
+    • מכשיר MTK מחובר דרך USB
+    • דרייברי המכשיר מותקנים
+    • כבל ה-USB תקין
+
+    עבור מכשירים כבויים או במצב Brick:
+    המכשיר יזוהה אוטומטית כאשר יחובר ל-USB.
+    אין צורך להדליק אותו תחילה.
+  detect_first: "אנא זהה מכשיר קודם"
+  select_workspace: "בחר תיקיית עבודה"
+  detecting_device: "מזהה מכשיר..."
+  extracting_partitions: "מחלץ מחיצות..."
+  extraction_complete_status: "החילוץ הושלם"
+  logo_failed: "החלת לוגו נכשלה"
+  props_applied: "מאפיינים הוחלו בהצלחה"
+  props_failed: "החלת מאפיינים נכשלה"
+  no_logo: "אנא בחר תמונת לוגו"
+  no_props: "אנא הזן מאפיינים לשינוי"
+  no_valid_props: "לא נמצאו מאפיינים תקינים"
+
+workspace:
+  select_workspace: "בחר תיקיית עבודה"
+  select_export: "בחר תיקיית ייצוא"
+  save_scatter: "שמור קובץ Scatter"
+
+status:
+  ready: "מוכן"
+  detecting: "מזהה מכשיר..."
+  extracting: "מחלץ מחיצות..."
+  exporting: "מייצא קושחה..."
+  complete: "הושלם"
+
+about:
+  title: "אודות עורך קושחות MTK Pro"
+  description: |
+    {name} גרסה {version}
+    
+    כלי מתקדם לעריכת קושחות אנדרואיד עבור מכשירי MediaTek.
+    
+    תכונות:
+    • זיהוי מכשיר וחילוץ מחיצות
+    • עריכת קושחה בזמן אמת
+    • יצירת קבצי Scatter עבור SP Flash Tool
+    • תצוגה מקדימה חיה של שינויים
+    • מערכת בדיקות מקיפה
+    
+  copyright: "כל הזכויות שמורות © 2026"
+
+devices:
+  mode_unknown: "לא ידוע"
+  mode_adb: "ADB"
+  mode_fastboot: "Fastboot"
+  mode_mtk_preloader: "MTK Preloader"
+  mode_mtk_download: "מצב הורדה MTK"
+  mode_offline: "לא מקוון"
+  mode_brick: "Brick/מצב שחזור"

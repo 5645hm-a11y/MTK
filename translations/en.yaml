@@ -1,0 +1,170 @@
+# English Translation
+app:
+  name: "MTK Firmware Editor Pro"
+  version: "1.0.0"
+
+menu:
+  file: "File"
+  file_open_workspace: "Open Workspace"
+  file_exit: "Exit"
+  device: "Device"
+  device_detect: "Detect Device"
+  device_extract_all: "Extract All Partitions"
+  tools: "Tools"
+  tools_generate_scatter: "Generate Scatter File"
+  tools_export_firmware: "Export Modified Firmware"
+  settings: "Settings"
+  settings_language: "Language"
+  help: "Help"
+  help_about: "About"
+
+toolbar:
+  detect_device: "Detect Device"
+  extract_partitions: "Extract Partitions"
+  import_partitions: "Import Existing Partitions"
+  generate_scatter: "Generate Scatter"
+  export_firmware: "Export Firmware"
+
+device_panel:
+  title: "Device Information"
+  status: "Status"
+  mode: "Mode"
+  chip: "Chip"
+  model: "Model"
+  not_connected: "Not Connected"
+  connected: "Connected"
+  connect_button: "Detect Device"
+
+partition_panel:
+  title: "Partitions"
+  name: "Name"
+  size_mb: "Size (MB)"
+  type: "Type"
+  status: "Status"
+  ready: "Ready"
+
+editor_panel:
+  title: "Editor"
+  boot_logo_section: "Boot Logo Editor"
+  logo_placeholder: "Select boot logo image..."
+  browse: "Browse"
+  apply_logo: "Apply Logo"
+  build_props_section: "Build Properties Editor"
+  props_placeholder: |
+    Enter properties in format:
+    ro.product.model=My Custom Phone
+    ro.build.display.id=Custom Build
+  apply_properties: "Apply Properties"
+  changes_log: "Modification Log"
+  clear_changes: "Clear Changes"
+
+preview_panel:
+  title: "Device Preview"
+  refresh: "Refresh Preview"
+  auto_refresh_enable: "Enable Auto-Refresh"
+  auto_refresh_disable: "Disable Auto-Refresh"
+  preview_info: "Preview: Boot Screen"
+  not_available: "Preview\nNot Available"
+  firmware_preview_title: "Firmware Composition Preview"
+  system_bootable: "Bootable image set detected"
+  system_partial: "Partial image set - boot may fail"
+  required_summary: "Required partitions: {present}/{total} (missing: {missing})"
+  derived_from_partitions: "Derived from extracted partitions"
+  preview_composed_info: "Preview: expected system from extracted partitions"
+  preview_logo_info: "Preview: selected boot logo"
+  app_phone: "Phone"
+
+messages:
+  device_detected: "Device detected: {mode}"
+  no_device: "No compatible device found. Please connect your MTK device."
+  error: "Error"
+  success: "Success"
+  warning: "Warning"
+  extraction_complete: "Extracted {count} partitions"
+  scatter_created: "Scatter file created successfully:\n{path}"
+  firmware_exported: "Firmware exported successfully to:\n{path}"
+  no_partitions: "No partitions available"
+  no_modifications: "No modifications to export"
+  select_logo: "Select Boot Logo Image"
+  logo_applied: "Boot logo applied successfully"
+  select_partition_folder: "Select folder containing partition files"
+  partitions_imported: "Imported {count} partition files from folder"
+  no_partition_files: "No partition files (.img) found in selected folder"
+  language_changed: "Language Changed"
+  restart_required: "Language changed to {language}.\n\nPlease restart the application for changes to take effect."
+  device_found: "Device found!\n\nMode: {mode}\nDevice: {name}"
+  brick_detected_title: "Device in Error State ⚠"
+  brick_detected_message: |
+    An MTK device was detected but appears to be in an error or brick state.
+
+    This might indicate:
+    • Device is powered off
+    • Device is bricked
+    • Missing or incorrect USB drivers
+
+    Solutions:
+    1. Install MTK USB VCOM drivers
+    2. Install libusb/WinUSB driver using Zadig (https://zadig.akeo.ie)
+    3. Try connecting device in different mode
+       - Hold Power + Volume Down while connecting
+       - Or hold Volume Up + Volume Down
+  no_device_title: "No Device Found"
+  no_device_message: |
+    No compatible MTK device found.
+
+    Please ensure:
+    • MTK device is connected via USB
+    • Device drivers are installed
+    • USB cable is working properly
+
+    For powered-off or bricked devices:
+    The device will be auto-detected when connected to USB.
+    No need to power it on first.
+  detect_first: "Please detect device first"
+  select_workspace: "Select Workspace Directory"
+  detecting_device: "Detecting device..."
+  extracting_partitions: "Extracting partitions..."
+  extraction_complete_status: "Extraction complete"
+  logo_failed: "Failed to apply boot logo"
+  props_applied: "Properties applied successfully"
+  props_failed: "Failed to apply properties"
+  no_logo: "Please select a logo image"
+  no_props: "Please enter properties to modify"
+  no_valid_props: "No valid properties found"
+  
+workspace:
+  select_workspace: "Select Workspace Directory"
+  select_export: "Select Export Directory"
+  save_scatter: "Save Scatter File"
+
+status:
+  ready: "Ready"
+  detecting: "Detecting device..."
+  extracting: "Extracting partitions..."
+  exporting: "Exporting firmware..."
+  complete: "Complete"
+
+about:
+  title: "About MTK Firmware Editor Pro"
+  description: |
+    {name} v{version}
+    
+    Advanced Android firmware modification tool for MediaTek devices.
+    
+    Features:
+    • Device detection and partition extraction
+    • Real-time firmware editing
+    • Scatter file generation for SP Flash Tool
+    • Live preview of modifications
+    • Comprehensive testing framework
+    
+  copyright: "All rights reserved © 2026"
+  
+devices:
+  mode_unknown: "Unknown"
+  mode_adb: "ADB"
+  mode_fastboot: "Fastboot"
+  mode_mtk_preloader: "MTK Preloader"
+  mode_mtk_download: "MTK Download"
+  mode_offline: "Offline"
+  mode_brick: "Brick/Recovery Mode"

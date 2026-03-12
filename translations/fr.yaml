@@ -1,0 +1,170 @@
+# French Translation - Traduction Française
+app:
+  name: "MTK Firmware Editor Pro"
+  version: "1.0.0"
+
+menu:
+  file: "Fichier"
+  file_open_workspace: "Ouvrir l'Espace de Travail"
+  file_exit: "Quitter"
+  device: "Appareil"
+  device_detect: "Détecter l'Appareil"
+  device_extract_all: "Extraire Toutes les Partitions"
+  tools: "Outils"
+  tools_generate_scatter: "Générer le Fichier Scatter"
+  tools_export_firmware: "Exporter le Firmware Modifié"
+  settings: "Paramètres"
+  settings_language: "Langue"
+  help: "Aide"
+  help_about: "À Propos"
+
+toolbar:
+  detect_device: "Détecter l'Appareil"
+  extract_partitions: "Extraire les Partitions"
+  import_partitions: "Importer des Partitions Existantes"
+  generate_scatter: "Générer Scatter"
+  export_firmware: "Exporter le Firmware"
+
+device_panel:
+  title: "Informations sur l'Appareil"
+  status: "Statut"
+  mode: "Mode"
+  chip: "Puce"
+  model: "Modèle"
+  not_connected: "Non Connecté"
+  connected: "Connecté"
+  connect_button: "Détecter l'Appareil"
+
+partition_panel:
+  title: "Partitions"
+  name: "Nom"
+  size_mb: "Taille (MB)"
+  type: "Type"
+  status: "Statut"
+  ready: "Prêt"
+
+editor_panel:
+  title: "Éditeur"
+  boot_logo_section: "Éditeur de Logo de Démarrage"
+  logo_placeholder: "Sélectionner l'image du logo de démarrage..."
+  browse: "Parcourir"
+  apply_logo: "Appliquer le Logo"
+  build_props_section: "Éditeur de Propriétés Build"
+  props_placeholder: |
+    Entrez les propriétés au format:
+    ro.product.model=Mon Téléphone Personnalisé
+    ro.build.display.id=Build Personnalisé
+  apply_properties: "Appliquer les Propriétés"
+  changes_log: "Journal des Modifications"
+  clear_changes: "Effacer les Modifications"
+
+preview_panel:
+  title: "Aperçu de l'Appareil"
+  refresh: "Actualiser l'Aperçu"
+  auto_refresh_enable: "Activer l'Actualisation Automatique"
+  auto_refresh_disable: "Désactiver l'Actualisation Automatique"
+  preview_info: "Aperçu: Écran de Démarrage"
+  not_available: "Aperçu\nNon Disponible"
+  firmware_preview_title: "Aperçu de composition du firmware"
+  system_bootable: "Ensemble d'images amorçable détecté"
+  system_partial: "Ensemble d'images partiel - échec possible au démarrage"
+  required_summary: "Partitions requises : {present}/{total} (manquantes : {missing})"
+  derived_from_partitions: "Dérivé des partitions extraites"
+  preview_composed_info: "Aperçu : système attendu à partir des partitions extraites"
+  preview_logo_info: "Aperçu : logo de démarrage sélectionné"
+  app_phone: "Téléphone"
+
+messages:
+  device_detected: "Appareil détecté: {mode}"
+  no_device: "Aucun appareil compatible trouvé. Veuillez connecter votre appareil MTK."
+  error: "Erreur"
+  success: "Succès"
+  warning: "Avertissement"
+  extraction_complete: "{count} partitions extraites"
+  scatter_created: "Fichier Scatter créé avec succès:\n{path}"
+  firmware_exported: "Firmware exporté avec succès vers:\n{path}"
+  no_partitions: "Aucune partition disponible"
+  no_modifications: "Aucune modification à exporter"
+  select_logo: "Sélectionner l'Image du Logo de Démarrage"
+  logo_applied: "Logo appliqué avec succès"
+  select_partition_folder: "Sélectionner le dossier contenant les fichiers de partition"
+  partitions_imported: "{count} fichiers de partition importés depuis le dossier"
+  no_partition_files: "Aucun fichier de partition (.img) trouvé dans le dossier sélectionné"
+  language_changed: "Langue modifiée"
+  restart_required: "Langue changée en {language}.\n\nVeuillez redémarrer l'application pour appliquer les modifications."
+  device_found: "Appareil trouvé !\n\nMode : {mode}\nAppareil : {name}"
+  brick_detected_title: "Appareil en état d'erreur ⚠"
+  brick_detected_message: |
+    Un appareil MTK a été détecté mais semble être dans un état d'erreur ou brick.
+
+    Cela peut indiquer :
+    • L'appareil est éteint
+    • L'appareil est brické
+    • Pilotes USB manquants ou incorrects
+
+    Solutions :
+    1. Installer les pilotes MTK USB VCOM
+    2. Installer le pilote libusb/WinUSB avec Zadig (https://zadig.akeo.ie)
+    3. Essayer de connecter l'appareil dans un mode différent
+       - Maintenir Power + Volume Bas lors de la connexion
+       - Ou maintenir Volume Haut + Volume Bas
+  no_device_title: "Aucun appareil trouvé"
+  no_device_message: |
+    Aucun appareil MTK compatible trouvé.
+
+    Veuillez vous assurer :
+    • L'appareil MTK est connecté via USB
+    • Les pilotes sont installés
+    • Le câble USB fonctionne correctement
+
+    Pour les appareils éteints ou brickés :
+    L'appareil sera automatiquement détecté lorsqu'il sera connecté en USB.
+    Pas besoin de l'allumer au préalable.
+  detect_first: "Veuillez d'abord détecter l'appareil"
+  select_workspace: "Sélectionner le répertoire de travail"
+  detecting_device: "Détection de l'appareil..."
+  extracting_partitions: "Extraction des partitions..."
+  extraction_complete_status: "Extraction terminée"
+  logo_failed: "Échec de l'application du logo"
+  props_applied: "Propriétés appliquées avec succès"
+  props_failed: "Échec de l'application des propriétés"
+  no_logo: "Veuillez sélectionner une image de logo"
+  no_props: "Veuillez entrer les propriétés à modifier"
+  no_valid_props: "Aucune propriété valide trouvée"
+
+workspace:
+  select_workspace: "Sélectionner le Répertoire de Travail"
+  select_export: "Sélectionner le Répertoire d'Export"
+  save_scatter: "Enregistrer le Fichier Scatter"
+
+status:
+  ready: "Prêt"
+  detecting: "Détection de l'appareil..."
+  extracting: "Extraction des partitions..."
+  exporting: "Exportation du firmware..."
+  complete: "Terminé"
+
+about:
+  title: "À Propos de MTK Firmware Editor Pro"
+  description: |
+    {name} v{version}
+    
+    Outil avancé de modification de firmware Android pour appareils MediaTek.
+    
+    Fonctionnalités:
+    • Détection d'appareil et extraction de partitions
+    • Édition de firmware en temps réel
+    • Génération de fichier Scatter pour SP Flash Tool
+    • Aperçu en direct des modifications
+    • Framework de tests complet
+    
+  copyright: "Tous droits réservés © 2026"
+
+devices:
+  mode_unknown: "Inconnu"
+  mode_adb: "ADB"
+  mode_fastboot: "Fastboot"
+  mode_mtk_preloader: "MTK Preloader"
+  mode_mtk_download: "Mode Téléchargement MTK"
+  mode_offline: "Hors Ligne"
+  mode_brick: "Brick/Mode Récupération"

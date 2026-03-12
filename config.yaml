@@ -1,0 +1,83 @@
+application:
+  author: Advanced Firmware Tools
+  language: he
+  name: MTK Firmware Editor Pro
+  version: 1.0.0
+device:
+  connection_timeout: 30
+  max_retries: 3
+  supported_modes:
+  - adb
+  - fastboot
+  - mtk_preloader
+  - mtk_download
+export:
+  checksum: md5
+  compression: zip
+  include_flash_tool: true
+mtk:
+  product_ids:
+  - '0x0003'
+  - '0x2000'
+  - '0x201c'
+  vendor_id: '0x0e8d'
+partitions:
+  build_excluded:
+  - userdata
+  - cache
+  - metadata
+  - persist
+  - nvram
+  - nvdata
+  - protect1
+  - protect2
+  - frp
+  - otp
+  - expdb
+  - para
+  build_required:
+  - preloader
+  - lk
+  - lk2
+  - boot
+  - recovery
+  - vendor_boot
+  - vbmeta
+  - vbmeta_system
+  - vbmeta_vendor
+  - dtbo
+  - tee1
+  - tee2
+  - logo
+  - secro
+  - system
+  - vendor
+  - product
+  - odm
+  - super
+  common:
+  - preloader
+  - lk
+  - boot
+  - system
+  - recovery
+  - vendor
+  - userdata
+  - cache
+  - nvram
+  - secro
+  - logo
+preview:
+  avd_base_dir: ""
+  enable_emulation: true
+  emulator_userdata_mb: 4096
+  fps: 60
+  min_free_space_gb: 20
+  screen_resolution:
+  - 1080
+  - 1920
+scatter:
+  default_template: templates/scatter_template.txt
+  output_format: MT{chip}_Android_scatter.txt
+tools:
+  simg2img_path: tools/simg2img.exe

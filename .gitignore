@@ -1,0 +1,79 @@
+# .gitignore for MTK Firmware Editor Pro
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Workspace and extracted files
+firmware_workspace/
+extracted_partitions/
+*.img
+*.bin
+
+# Scatter files
+*scatter*.txt
+*.scatter
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Backup files
+*.backup
+*.bak
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Package outputs
+*.zip
+packages/
+output/
+
+# Test files
+test_output/
+*.test
+
+# Sensitive data
+*.key
+*.pem
+credentials/

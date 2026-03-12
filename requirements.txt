@@ -1,0 +1,32 @@
+# MTK Firmware Editor - Requirements
+# Core Dependencies
+pyserial>=3.5
+pyusb>=1.2.1
+adb-shell>=0.4.3
+pure-python-adb>=0.3.0.dev0
+
+# GUI Framework
+PyQt6>=6.5.0
+PyQt6-WebEngine>=6.5.0
+
+# Image Processing
+Pillow>=10.0.0
+opencv-python>=4.8.0
+
+# Firmware Analysis
+python-magic>=0.4.27
+lz4>=4.3.2
+
+# Archive Handling
+py7zr>=0.20.0
+
+# Hex Editing
+hexdump>=3.3
+
+# Progress & UI
+tqdm>=4.66.0
+rich>=13.5.0
+
+# Utilities
+pyyaml>=6.0
+requests>=2.31.0
