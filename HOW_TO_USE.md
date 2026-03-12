@@ -4,15 +4,15 @@
 
 ### דרך 1: הפעלה ישירה מטרמינל
 ```powershell
-cd "c:\Users\MH\Documents\1"
-C:\Users\MH\AppData\Local\Programs\Python\Python314\python.exe main.py
+cd "C:\path\to\project"
+python main.py
 ```
 
 ### דרך 2: יצירת קיצור דרך
 1. לחץ ימני על שולחן העבודה → חדש → קיצור דרך
 2. מיקום:
    ```
-   C:\Users\MH\AppData\Local\Programs\Python\Python314\pythonw.exe "c:\Users\MH\Documents\1\main.py"
+   pythonw.exe "C:\path\to\project\main.py"
    ```
 3. שם: MTK Firmware Editor Pro
 4. סיום
@@ -264,7 +264,7 @@ Status: OK
 ## 📁 מבנה תיקיות לאחר עבודה
 
 ```
-c:\Users\MH\Documents\1\
+C:\path\to\project\
 │
 ├── extracted_partitions/      # מחיצות שחולצו
 │   ├── boot.img

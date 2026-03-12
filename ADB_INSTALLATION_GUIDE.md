@@ -237,8 +237,8 @@ adb shell getprop ro.build.version.release
 
 ### עכשיו נסה את התוכנה:
 ```powershell
-cd "c:\Users\MH\Documents\1"
-C:\Users\MH\AppData\Local\Programs\Python\Python314\python.exe main.py
+cd "C:\path\to\project"
+python main.py
 
 # לחץ "זהה מכשיר" / "Detect Device"
 # המכשיר אמור להיזהות!
@@ -300,7 +300,7 @@ adb pull /sdcard/file.txt .       # העתקה מהמכשיר
 ### 1. שמור את platform-tools במיקום קבוע
 ```
 ✅ טוב: C:\Android\platform-tools
-❌ רע: C:\Users\MH\Downloads\platform-tools-34\
+❌ רע: C:\Users\<username>\Downloads\platform-tools-34\
 ```
 
 ### 2. הוסף לסביבה גלובלית

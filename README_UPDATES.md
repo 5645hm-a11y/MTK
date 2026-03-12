@@ -263,4 +263,4 @@ application:
 
 **גרסה: 1.1.0**  
 **תאריך עדכון: 2025**  
-**מפתח: AI Assistant + User MH**
+**מפתח: AI Assistant + Project Maintainer**

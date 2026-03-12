@@ -66,7 +66,7 @@
 
 ### 2. התקן תלויות
 ```powershell
-cd "c:\Users\MH\Documents\1"
+cd "C:\path\to\project"
 pip install -r requirements.txt
 ```
 

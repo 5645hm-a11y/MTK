@@ -80,7 +80,7 @@ cd MTK_Firmware_Editor
 
 #### אופציה ב': התקנה ידנית
 ```powershell
-cd "c:\Users\MH\Documents\1"
+cd "C:\path\to\project"
 pip install -r requirements.txt
 ```
 
