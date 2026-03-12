@@ -41,7 +41,7 @@ def main():
     
     # Initialize i18n
     i18n = get_i18n()
-    default_lang = config.get('application.language', 'he')
+    default_lang = config.get('application.language', 'en')
     i18n.set_language(default_lang)
     logger.info(f"Language set to: {i18n.get_language_name()}")
     

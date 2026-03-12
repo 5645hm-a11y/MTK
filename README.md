@@ -119,6 +119,11 @@ python main.py
 - טען את קובץ ה-Scatter שנוצר
 - עקוב אחר ההוראות ב-FLASH_INSTRUCTIONS.txt
 
+### שפה (Language)
+- **שפת ברירת מחדל**: English
+- **שפות נתמכות לבחירה**: עברית (Hebrew), Français (French)
+- ניתן לשנות שפה מתוך התפריט העליון: `Language / שפה / Langue`
+
 ## מבנה הפרויקט
 
 ```
